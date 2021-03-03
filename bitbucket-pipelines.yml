@@ -1,0 +1,11 @@
+image: node:10.15.0
+options:
+    size: 2x
+pipelines:
+  branches:
+    master:
+      - step:
+          script:
+            - apt-get update && apt-get install -y awscli
+            - aws s3 --region "us-east-2" rm s3://studentapp.emp-sig.com
+            - aws s3 --region "us-east-2" sync ./build s3://studentapp.emp-sig.com

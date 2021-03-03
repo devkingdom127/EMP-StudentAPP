@@ -1,0 +1,178 @@
+html {
+    height: 100%;
+    font-size: 12px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body {
+    background-image: linear-gradient(var(--body-background-top), var(--body-background-bottom));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Login Container */
+.login-container{
+    width: 30%;
+    margin: auto;
+    margin-top: 100px;
+    background-color: var(--login-container-background);
+    text-align: center;
+    border-radius: 21px;
+}
+.login-container .top-logo{
+    width: 50%;
+    margin-top: 20px;
+}
+.login-container .top-txt{
+    font-size: 18px;
+    font-weight: 700;
+}
+.login-container form {
+    width: 70%;
+    margin: auto;
+}
+.login-container input{
+    border: 1px solid var(--border-color);
+    border-radius: 3px;
+}
+.login-container input::placeholder {
+    color: var(--txt-input-placeholder-color);
+    font-style: italic;
+  }
+.login-container form .input-email, .login-container form .input-password{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.login-container .checkbox-form{
+    text-align: left;
+    margin-bottom: 20px;
+}
+.login-container .btn-submit{
+    padding: 5px 50px;
+    background-color: var(--btn-background);
+    border: 1px solid var(--border-color);
+    border-radius: 3px;
+    color: var(--txt-login-btn);
+    cursor: pointer;
+}
+.login-container a {
+    color: var(--txt-default-color);
+}
+.login-container .login-footer{
+    display: flex;
+    justify-content: flex-end;
+} 
+.login-container .login-footer img{
+    width: 120px;
+
+}
+.login-container .login-footer p{
+    padding-top: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    font-style: italic;
+}
+
+/* Dashboard Container */
+.app-container {
+    display: flex;
+}
+
+.app-container .left-side {
+    width: 120px;
+    padding: 10px;
+}
+
+.app-container .side-menu-icon {
+    width: 22px;
+    margin-right: 10px;
+}
+
+.app-container .side-menu-button {
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+    color: white;
+    font-size: 14px;
+}
+
+.app-container .menu-footer {
+    position: absolute;
+    bottom: 20px;
+    padding-top: 10px;
+    border-top: 2px solid white;
+    width: 120px;
+}
+
+.app-container .menu-footer > a {
+    cursor: pointer;
+}
+
+.app-container .menu-header {
+    justify-content: center;
+    display: flex;
+    padding-bottom: 10px;
+    border-bottom: 2px solid white;
+}
+
+.app-container .menu-header img {
+    width: 100px;
+}
+
+.app-container .main-container {
+    background-color: white;
+    flex: 1;
+    height: calc(100vh - 20px);
+}
+
+/* checkbox-form */
+
+input[type="checkbox"] {
+    visibility: hidden;
+}
+label {
+    cursor: pointer;
+}
+input[type="checkbox"] + label:before {
+    border: 1px solid var(--border-color);
+    content: "\00a0";
+    display: inline-block;
+    font: 16px/1em sans-serif;
+    height: 13px;
+    margin-top : 3px;
+    margin-right: 7px;
+    margin-left: -10px;
+    padding: 0;
+    vertical-align: top;
+    width: 13px;
+    background-color: var(--checkbox-background-color);
+}
+input[type="checkbox"]:checked + label:before {
+    background: var(--checkbox-checked-background-color);
+    color: var(--checkbox-checked-color);
+    content: "\2713";
+    text-align: center;
+}
+input[type="checkbox"]:checked + label:after {
+    font-weight: bold;
+}
+
+/* responsive */
+@media only screen and (max-width: 768px) {
+    .login-container {
+        width: 45%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .login-container {
+        margin-top: 60px;
+        width: 60%;
+    }
+}
+@media only screen and (max-width: 450px) {
+    .login-container {
+        margin-top: 40px;
+        width: 80%;
+    }
+}

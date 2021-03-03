@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+<body>
+    <div class="login-container">
+        <img class="top-logo" src="./src/sample.png" alt="LOGO">
+        <p class="top-txt">[Login to your account]</p>
+        <form onsubmit="return handleSubmit(this);">
+            <input type="email" name="email" class="input-email" placeholder="Email*">
+            <input type="password" name="password" class="input-password" placeholder="Password*">
+            <div class="checkbox-form">
+                <input type="checkbox" id="readme" name="readme">
+                <label for="readme">Remember Me</label>
+            </div>
+            <button type="submit" class="btn-submit">Login</button>
+        </form>
+        <p>Issues with login <span><a href=""> contact us.</a></span></p>
+        <div class="login-footer">
+            <p>Powered By</p>
+            <img src="./src/sample.png" alt="LOGO">
+        </div>
+    </div>
+
+    <script type="text/javascript" src="./src/color.json"></script>
+    <script type="text/javascript" src="./src/cfg/login.json"></script>
+    <script type="text/javascript" src="./src/cfg/errormsg.json"></script>
+    <script src="./src/js/md5.js"></script>
+    <script src='./src/js/index.js'></script>
+    <script src="./src/js/login.js"></script>
+</body>
+</html>

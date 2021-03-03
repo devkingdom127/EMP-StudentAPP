@@ -1,0 +1,5 @@
+const errormsg = {
+    "error_login": "Login Credential does not exist.",
+    "error_email_blank": "Please input Email.",
+    "error_password_blank": "Please input Password"
+}

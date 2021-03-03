@@ -1,0 +1,31 @@
+const data = {
+    palette: 
+    {
+        primary: {
+            "--body-background-top" : "#306CE6",
+            "--body-background-bottom" : "#001D67",
+            "--login-container-background" : "#F4F9FE",
+            "--btn-background": "#CDCDCD",
+            "--border-color": "#B4B3B3",
+            "--txt-login-btn": "#838181",
+            "--txt-default-color": "#000000",
+            "--txt-input-placeholder-color": "#A5A2A2",
+            "--checkbox-background-color": "#C4C4C4",
+            "--checkbox-checked-color": "#000000",
+            "--checkbox-checked-background-color": "#ffffff",
+        },
+        secondary: {
+            "--body-background-top" : "#ffffff",
+            "--body-background-bottom" : "#001D67",
+            "--login-container-background" : "#F4F9FE",
+            "--btn-background": "#CDCDCD",
+            "--border-color": "#B4B3B3",
+            "--txt-login-btn": "#838181",
+            "--txt-default-color": "#000000",
+            "--txt-input-placeholder-color": "#A5A2A2",
+            "--checkbox-background-color": "#C4C4C4",
+            "--checkbox-checked-color": "#000000",
+            "--checkbox-checked-background-color": "#ffffff",
+        },
+    },
+};
