@@ -30,3 +30,8 @@ function handleSubmit(form) {
     }
     
 }
+
+function hideFooter() {
+    const hideDiv = document.getElementById('loginFooter');
+    hideDiv.style.display = 'none';
+}
